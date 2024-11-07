@@ -7,7 +7,7 @@ Informe quantos dias irá durar a ração e quanto sobra da ração (em gramas)
 // Função para calcular a estimativa de duração e a sobra de ração
 // Função para criar campos dinamicamente e calcular estimativa de duração e sobra de ração
 document.getElementById("btCalculo").addEventListener("click", function () {
-    const pesoRacao = parseFloat(document.getElementById("inPesoRacao").value);
+    const pesoRacao = parseFloat(document.getElementById("inPesoRacao").value) * 1000 ;
     const consumoDiario = parseFloat(document.getElementById("inConsumoDiario").value);
 
     // Verifica se os valores são válidos
